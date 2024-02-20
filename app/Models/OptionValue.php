@@ -9,7 +9,7 @@ class OptionValue extends Model
 {
     use HasFactory;
 
-    public function optionType()
+    public function type()
     {
         return $this->belongsTo(OptionType::class, 'option_type_id');
     }
