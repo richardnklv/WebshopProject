@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $products = Product::with(['variants', 'variants.optionValues'])->get();
-    return view('home', [
+    return view('hello', [
         'products' => $products
     ]);
 });
